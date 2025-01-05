@@ -1,0 +1,112 @@
+.card {
+  background-color: var(--grey-800);
+  width: 327px;
+  height: 579px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-top: 6px; */
+  align-items: center;
+
+  /* Set to relative position to adjust inner part - not yet deciding*/
+  /* position: relative; */
+  border-radius: 10px;
+}
+
+.card .profile-section {
+  transform: translateY(-12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-150);
+}
+
+.card .profile-section .profile-image-holder {
+  width: 88px;
+  height: 88px;
+  margin: auto;
+  margin-bottom: var(--spacing-150);
+}
+
+.card .profile-section .profile-image-holder img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+/* Soon it will be overflow hidden */
+/* .card .profile-section .profile-image-holder h1 {
+    font-weight: bold;
+} */
+
+.card .profile-section .profile-info {
+  height: 61px;
+  margin-bottom: 8px;
+}
+
+.card .profile-section .profile-info h2.profile-name {
+  font-weight: bold;
+  font-size: var(--fs-big);
+  margin-bottom: var(--spacing-150);
+}
+
+.card .profile-section .profile-info h3.profile-address {
+  font-weight: bold;
+  color: var(--green);
+}
+
+.card .profile-section p.profile-description {
+  margin-bottom: var(--spacing-150);
+}
+
+.card .link-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-150);
+  gap: var(--spacing-200);
+}
+
+.card .link-section .link-item {
+  height: 45px;
+  width: 304px;
+  text-align: center;
+  line-height: 45px;
+  background-color: var(--grey-700);
+  border-radius: 6px; /* using percentage it becomes round. */
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+/* .card .link-section .link-item a.profile-link {} */
+
+/* || STATES */
+
+.card .link-section .link-item:hover {
+  background-color: var(--green);
+  color: var(--grey-800);
+  cursor: pointer;
+}
+
+.card .link-section .link-item:active {
+  opacity: 0.8;
+  color: var(--grey-700);
+}
+
+/* || Media Query */
+/* || TABLETS */
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 456px;
+    height: 611px;
+  }
+}
+
+/* || DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .card {
+    width: 384px;
+    height: 611px;
+  }
+}

@@ -1,0 +1,11 @@
+.root-container {
+  /* height: 100vh; */
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* General font color of this card */
+  color: var(--white);
+  background-color: var(--grey-900);
+}
