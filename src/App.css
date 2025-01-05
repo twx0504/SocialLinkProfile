@@ -76,7 +76,7 @@
   background-color: var(--grey-700);
   border-radius: 6px; /* using percentage it becomes round. */
   font-weight: bold;
-  transition: 0.6s;
+  transition: 0.2s;
 }
 
 /* .card .link-section .link-item a.profile-link {} */
@@ -92,6 +92,15 @@
 .card .link-section .link-item:active {
   opacity: 0.8;
   color: var(--grey-700);
+  transform: scale(0.98);
+}
+
+@media (hover: none) {
+  .card .link-section .link-item:hover {
+    background-color: var(--grey-700);
+    color: var(--white);
+    cursor: pointer;
+  }
 }
 
 /* || Media Query */

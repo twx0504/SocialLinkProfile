@@ -1,8 +1,45 @@
-# React + Vite
+# Frontend Mentor - Social links profile solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- See hover and focus states for all interactive elements on the page
+
+### Links
+
+- Solution URL: [Social Link Profile](https://github.com/twx0504/SocialLinkProfile)
+- Live Site URL: [Live](https://twx0504.github.io/SocialLinkProfile/)
+
+## My process
+
+### Built with
+
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+### What I learned
+
+1. Learn to use media query with CSS custom properties for responsive design.
+2. Get familiar with React.
+
+## Author
+
+- GitHub - [twx0504](https://github.com/twx0504)
+- Frontend Mentor - [@twx0504](https://www.frontendmentor.io/profile/twx0504)

@@ -1,25 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
+import { links, profileInfo } from "./profileData";
 import profilePicture from "./assets/images/chill-guy.jpg";
 
 export default function App() {
-  const [profile] = useState({
-    name: "Too Wei Xin",
-    addr: "Johor, Malaysia",
-    desc: "A passionate junior frontend developer.",
-  });
-  // Link Data Management
-  const [links] = useState([
-    { platform: "GitHub", link: "https://github.com/twx0504" },
-    {
-      platform: "Frontend Mentor",
-      link: "https://www.frontendmentor.io/profile/twx0504",
-    },
-    { platform: "LinkedIn", link: "https://www.linkedin.com/in/weixintoo/" },
-    { platform: "Twitter", link: "https://x.com/tuaku0504" },
-    { platform: "Instagram", link: "https://www.instagram.com/twx0504/" },
-  ]);
-
   return (
     <div className="card">
       <div className="profile-section">
@@ -29,12 +13,10 @@ export default function App() {
           {/* <h1>Jessica</h1> */}
         </div>
         <div className="profile-info">
-          <h2 className="profile-name">{profile.name}</h2>
-          <h3 className="profile-address">{profile.addr}</h3>
+          <h2 className="profile-name">{profileInfo.name}</h2>
+          <h3 className="profile-address">{profileInfo.addr}</h3>
         </div>
-        <p className="profile-description">
-          "{profile.desc}"
-        </p>
+        <p className="profile-description">"{profileInfo.desc}"</p>
       </div>
       <ul className="link-section">
         {links.map((it, idx) => {
